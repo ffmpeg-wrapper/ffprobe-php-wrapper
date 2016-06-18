@@ -1,0 +1,17 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# |--------------------------------------------------------------------------------------------------------------------
+# | Vagrant VM File
+# |--------------------------------------------------------------------------------------------------------------------
+
+Vagrant.configure(2) do |config|
+
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.provision :shell, :path => "script/vagrant/provision.sh"
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 2048
+    vb.customize ["modifyvm", :id, "--cpuexecutioncap", "100"]
+  end
+end
