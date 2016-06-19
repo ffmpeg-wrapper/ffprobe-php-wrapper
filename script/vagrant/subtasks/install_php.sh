@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # install PHP 5.6
-LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php -y
+sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php -y
 
-apt-get update -y
-apt-get install php5.6 \
+sudo apt-get update -y
+sudo apt-get install php5.6 \
                 php5.6-mbstring \
                 php5.6-xml \
                 -y
