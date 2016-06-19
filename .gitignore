@@ -3,3 +3,11 @@
 
 # Build directory
 build
+
+# Composer dependencies
+vendor
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
